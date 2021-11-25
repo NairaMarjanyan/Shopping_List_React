@@ -1,38 +1,106 @@
+* {
+  font-size: 36px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color:white;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-background {
+  background-color: #bee3ff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+}
+
+.main-container {
+  background-color: green;
+  width: 500px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);
+}
+
+.add-item-box {
+  background: rgb(116, 165, 43);
+  color: rgb(237, 245, 237);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-item-input {
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  color: rgb(203, 247, 232);
+  width: 100%;
+  height: px;
+}
+
+input:placeholder {
+  color: rgb(201, 253, 236);
+}
+
+.item-list {
   display: flex;
   flex-direction: column;
+}
+
+.item-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #c4f74d;
 }
 
-.App-link {
-  color: #61dafb;
+.item-name {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total {
+  float: right;
+  padding: 10px;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid yellowgreen;
+  background: wheat;
+  border-radius: 50px;
+  font-size: 12px;
+  color: rgb(46, 124, 52);
+  min-width: 70px
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: 3px;
+  color: rgb(49, 122, 61);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
 }
